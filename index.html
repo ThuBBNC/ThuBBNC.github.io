@@ -16,6 +16,11 @@
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
@@ -35,13 +40,16 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://media.au.tsinghua.edu.cn/">About</a>
+              <a class="nav-link" href="#Motivation">Motivation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://media.au.tsinghua.edu.cn/">Experiments</a>
+              <a class="nav-link" href="#Performance">Performance</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://media.au.tsinghua.edu.cn/">Contact</a>
+              <a class="nav-link" href="#Experiments">Experiments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -53,14 +61,40 @@
 
       <!-- Portfolio Item Heading -->
       <h1 class="my-4">Real-time Ultra-large-Scale High-resolution macroscopy (RUSH)
-        <small></small>
       </h1>
 
       <!-- Portfolio Item Row -->
       <div class="row">
 
         <div class="col-md-8">
-          <img class="img-fluid" src="img\overall.jpg" alt="">
+          <!--<img class="img-fluid" src="img\overall.jpg" alt=""> -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+               <!-- 轮播（Carousel）指标 -->
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+               </ol>   
+               <!-- 轮播（Carousel）项目 -->
+               <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                     <img class="img-fluid" src="img/overall.jpg" alt="overall">
+                  </div>
+                  <div class="carousel-item">
+                     <img class="img-fluid" src="img/overall_real.jpg" alt="overall">
+                  </div>
+                  <div class="carousel-item">
+                     <img class="img-fluid" src="img/brain_0.jpg" alt="brain_0">
+                  </div>
+               </div>
+               <!-- 轮播（Carousel）导航 -->
+               <a class="carousel-control-prev" href="#myCarousel"   data-slide="prev">
+                 <font size="30px"> &lsaquo; </font>
+               </a>
+               <a class="carousel-control-next" href="#myCarousel"  data-slide="next">
+                 <font size="30px"> &rsaquo; </font>
+               </a>
+             </div>
         </div>
 
         <div class="col-md-4">
@@ -70,7 +104,7 @@
           <ul>
             <li>FOV：1.0 cm*1.2 cm</li>
             <li>Resolution: 800 nm</li>
-            <li>Frame rate: 30 HZ</li>
+            <li>Frame rate: 30 Hz</li>
             <li>Data Throughpuut: 11.55 GB/s</li>
           </ul>
         </div>
@@ -78,38 +112,88 @@
       </div>
       <!-- /.row -->
 
-      <!-- Related Projects Row -->
-      <h3 class="my-4">Experiment results</h3>
+      
+      <!-- Part 1 : Motivation -->
+      <h3 class="my-4" id="Motivation">Motivation</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+          Large-scale imaging of biological dynamics at high resolution <i>in vivo</i> is fundamental for systems biology. For example, large-scale recording of neural network activity <i>in vivo</i>, 
+          is set as one of the major goals of both <i>BRAIN Initiative</i> and <i>Chinese Brain Project</i>.
+          </p>
+          <p> However, conventional microscopes could not complete the requirements of both high optical resolution and large field-of-view (FoV) simultaneously. And recent reports on mesoscopes are still of low data throughput.</p>
+          <p>Our innovations:</p>
+          <ul>
+            <li>A novel objective at <i>cm</i> scale FoV and sub-<i>μm</i> resolution</li>
+            <li>A high-throughput camera array of 35 sCMOS for image sensing</li>
+          </ul> 
+        </div>
+        <div class="col-md-4">
+          <a href="img\system.jpg">
+           <img class="img-fluid" src="img/system.jpg" alt="system">
+          </a>
+        </div>
+      </div>
+      
 
+      <!-- Part 3 : Performance -->
+      <h3 class="my-4" id="Performance">Performance</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Real-time, Ultra-large-Scale imaging at High resolution (RUSH) macroscope:</p> 
+          <ul>
+            <li>FOV：1.0 cm*1.2 cm</li>
+            <li>Resolution: 800 nm</li>
+            <li>169 million pixels per frame</li>
+            <li>Frame rate: 30 Hz</li>
+            <li>Data Throughpuut: 11.55 GB/s</li>
+          </ul>
+          <p>The largest FoV, highest throughput macroscope at high resolution at the moment.</p>
+        </div>
+        <div class="col-md-4">
+          <a href="img\overall_1.jpg">
+           <img class="img-fluid" src="img/overall_1.jpg" alt="overall_1">
+          </a>
+        </div>
+      </div>
+      
+      
+      <!-- Related Projects Row -->
+      <h3 class="my-4" id="Experiments">Experiment results</h3>
       <div class="row">
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="http://media.au.tsinghua.edu.cn/">
+          <a href="img\slice.jpg">
             <img class="img-fluid" src="img\slice.jpg" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="http://media.au.tsinghua.edu.cn/">
+          <a href="img\cardiac.jpg">
             <img class="img-fluid" src="img\cardiac.jpg" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="http://media.au.tsinghua.edu.cn/">
+          <a href="img\blood.jpg">
             <img class="img-fluid" src="img\blood.jpg" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="http://media.au.tsinghua.edu.cn/">
+          <a href="img\music.jpg">
             <img class="img-fluid" src="img\music.jpg" alt="">
           </a>
         </div>
 
       </div>
       <!-- /.row -->
-
+    
+      <!-- Final -->
+      <h3 class="my-4" id="Contact">Contact</h3>
+      <p><b>Qionghai Dai</b>, Department of Automation, Tsinghua University, Beijing<br>
+      E-mail: <a href="mailto:daiqh@tsinghua.edu.cn">daiqh@tsinghua.edu.cn</a></p>
+    
     </div>
     <!-- /.container -->
 
@@ -121,10 +205,6 @@
       <!-- /.container -->
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
   </body>
 
