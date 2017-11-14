@@ -26,17 +26,52 @@ $(function () {
   // Initialize the Gallery as video carousel:
   blueimp.Gallery([
     {
-      title: 'test video 1',
-      href: 'http://media.au.tsinghua.edu.cn/kinectfvv.mp4',
+      title: 'Calcium imaging in awake mouse brains (Thy1-GCaMP)',
+      href: 'video/media10.mp4',
       type: 'video/mp4',
-      poster: 'img/slice.jpg'
+      poster: 'video/media10.jpg'
     },
     {
-      title: 'test video 1',
-      href: 'http://media.au.tsinghua.edu.cn/mtrack.mp4',
+      title: 'In-vivo imaging of leukocyte trafficking in mouse brain (CX3CR1)',
+      href: 'video/media3.mp4',
       type: 'video/mp4',
-      poster: 'img/blood.jpg'
+      poster: 'video/media3.jpg'
     },
+    
+    {
+      title: 'demo video',
+      href: 'video/media4.mp4',
+      type: 'video/mp4',
+      poster: 'video/media4.jpg'
+    },
+    
+    {
+      title: 'demo video',
+      href: 'video/media5.mp4',
+      type: 'video/mp4',
+      poster: 'video/media5.jpg'
+    },
+    
+    {
+      title: 'test video',
+      href: 'video/media1.mp4',
+      type: 'video/mp4',
+      poster: 'video/media1.jpg'
+    },
+    {
+      title: 'test video',
+      href: 'video/media2.mp4',
+      type: 'video/mp4',
+      poster: 'video/media2.jpg'
+    },
+
+    {
+      title: 'test video',
+      href: 'video/media6.mp4',
+      type: 'video/mp4',
+      poster: 'video/media6.jpg'
+    },
+
 
   ], {
     container: '#blueimp-video-carousel',
