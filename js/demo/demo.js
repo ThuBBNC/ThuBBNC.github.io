@@ -37,41 +37,18 @@ $(function () {
       type: 'video/mp4',
       poster: 'video/media3.jpg'
     },
-    
     {
-      title: 'demo video',
-      href: 'video/media4.mp4',
+      title: 'In-vitro calcium imaging of mouse cardiac cells',
+      href: 'video/media11.mp4',
       type: 'video/mp4',
-      poster: 'video/media4.jpg'
+      poster: 'video/media11.jpg'
     },
-    
-    {
-      title: 'demo video',
-      href: 'video/media5.mp4',
+    {      
+      title: 'In-vivo vascular imaging in mouse brains',
+      href: 'video/media12.mp4',
       type: 'video/mp4',
-      poster: 'video/media5.jpg'
+      poster: 'video/media12.jpg'
     },
-    
-    {
-      title: 'test video',
-      href: 'video/media1.mp4',
-      type: 'video/mp4',
-      poster: 'video/media1.jpg'
-    },
-    {
-      title: 'test video',
-      href: 'video/media2.mp4',
-      type: 'video/mp4',
-      poster: 'video/media2.jpg'
-    },
-
-    {
-      title: 'test video',
-      href: 'video/media6.mp4',
-      type: 'video/mp4',
-      poster: 'video/media6.jpg'
-    },
-
 
   ], {
     container: '#blueimp-video-carousel',
